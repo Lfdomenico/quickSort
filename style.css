@@ -1,0 +1,59 @@
+.blocos{
+    height: 150px;
+    width: 150px;
+    border: 3px black solid;
+    text-align: center;
+    font-size: 8em;
+    display: inline-block;
+    
+}
+
+h1{
+    font-size: 3em;
+}
+
+#bloco1{
+    background-color: blue;
+    animation: slideDown;
+    animation-duration: 2s;
+}
+
+#bloco2{
+    background-color: rgb(31, 177, 97);
+}
+
+#bloco3{
+    background-color: rgb(201, 0, 43);
+}
+
+#bloco4{
+    background-color: rgb(44, 110, 5);
+}
+
+#bloco5{
+    background-color: rgb(74, 149, 192);
+}
+
+#bloco6{
+    background-color: rgb(150, 39, 172);
+}
+
+#bloco7{
+    background-color: rgb(189, 209, 184);
+}
+
+
+#bloco8{
+    background-color: rgb(53, 248, 4);
+}
+
+@keyframes slideDown{
+    from {
+        margin-top: 100%;  
+    }
+    to{
+        margin-bottom: 50%;
+    }
+        
+    
+}
