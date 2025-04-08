@@ -13,7 +13,7 @@ h1{
 }
 
 #bloco1{
-    background-color: blue;
+    background-color: rgb(148, 209, 132);
     animation: slideDown;
     animation-duration: 2s;
 }
@@ -23,7 +23,7 @@ h1{
 }
 
 #bloco3{
-    background-color: rgb(201, 0, 43);
+    background-color: rgb(53, 248, 4);
 }
 
 #bloco4{
@@ -39,12 +39,12 @@ h1{
 }
 
 #bloco7{
-    background-color: rgb(189, 209, 184);
+    background-color: rgb(201, 0, 43);
 }
 
 
 #bloco8{
-    background-color: rgb(53, 248, 4);
+    background-color: blue;
 }
 
 @keyframes slideDown{
