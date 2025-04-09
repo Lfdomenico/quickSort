@@ -1,11 +1,18 @@
 .blocos{
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
     border: 3px black solid;
     text-align: center;
-    font-size: 8em;
+    font-size: 2em;
     display: inline-block;
-    
+    margin-top: 10%;
+}
+body{
+    background-color: rgb(44, 39, 39);
+}
+
+h1{
+    color: white;
 }
 
 h1{
@@ -14,46 +21,129 @@ h1{
 
 #bloco1{
     background-color: rgb(148, 209, 132);
-    animation: slideDown;
-    animation-duration: 2s;
 }
 
 #bloco2{
     background-color: rgb(31, 177, 97);
+    animation: slideDownRightUp2 5s forwards;
+    animation-delay: 10s;
 }
 
 #bloco3{
     background-color: rgb(53, 248, 4);
+    animation: slideLeft 2s forwards;
+    animation-delay: 12s;
 }
 
 #bloco4{
     background-color: rgb(44, 110, 5);
+    animation: slideDownRightUp 8s forwards;
+    animation-delay: 5s;
 }
 
-#bloco5{
+#bloco5 {
     background-color: rgb(74, 149, 192);
+    animation: slideDownRightUp 5s forwards; /* Tempo total de 6 segundos */
+    animation-delay: 5s;
 }
 
 #bloco6{
     background-color: rgb(150, 39, 172);
+    animation: slideUpLeftDown2 5s forwards;
+    animation-delay: 10s;
 }
 
 #bloco7{
     background-color: rgb(201, 0, 43);
+    animation: slideRight 3s forwards;
+    animation-delay: 4s;
 }
-
 
 #bloco8{
     background-color: blue;
-}
-
-@keyframes slideDown{
-    from {
-        margin-top: 100%;  
-    }
-    to{
-        margin-bottom: 50%;
-    }
-        
+    animation: slideUpLeftDown 10s forwards;
     
 }
+@keyframes slideRight{
+    to{transform: translateX(60px)}
+}
+
+@keyframes slideUpLeftDown{
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    33% {
+        transform: translateY(-70px); /* Desce para baixo */
+    }
+    66% {
+        transform: translateY(-70px) translateX(-240px); /* Move para a direita */
+    }
+    100% {
+        transform: translateY(0px) translateX(-240px) /* Sobe para cima */
+    }
+}
+
+@keyframes slideUpLeftDown2{
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(-70px);
+    }
+    66%{
+        transform: translateY(-70px) translateX(-180px);
+    }
+    100%{
+        transform: translateY(0px) translateX(-180px);
+    }
+}
+@keyframes slideDownRightUp {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    33% {
+        transform: translateY(70px); /* Desce para baixo */
+    }
+    66% {
+        transform: translateY(70px) translateX(120px); /* Move para a direita */
+    }
+    100% {
+        transform: translateY(-0px) translateX(120px); /* Sobe para cima */
+    }
+}
+
+@keyframes slideDownRightUp2{
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(70px);
+    }
+    66%{
+        transform: translateY(70px) translateX(180px);
+    }
+    100%{
+        transform: translateY(-0px) translateX(180px);
+    }
+}
+
+@keyframes downLeftUp{
+    0%{
+        transform: translateY(0);
+    }
+    33%{
+        transform: translateY(70px);
+    }
+    66%{
+        transform: translateY(70px) translateX(-180px);
+    }
+
+    100%{
+        transform: translateY(-0px) translateX(-180px)
+    }
+}
+
+@keyframes slideLeft{
+    to{transform: translateX(-60px)}
+}
+
