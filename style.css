@@ -9,6 +9,7 @@
 }
 body{
     background-color: rgb(44, 39, 39);
+    text-align: center;
 }
 
 h1{
@@ -20,55 +21,216 @@ h1{
 }
 
 #bloco1{
-    background-color: rgb(148, 209, 132);
+    background-color: rgb(171, 245, 152);
 }
 
 #bloco2{
-    background-color: rgb(31, 177, 97);
-    animation: slideDownRightUp2 5s forwards;
-    animation-delay: 10s;
+    background-color: rgb(32, 61, 24);
+    animation: slideBloco2 14s forwards;
+    animation-delay: 7s;
 }
 
 #bloco3{
-    background-color: rgb(53, 248, 4);
-    animation: slideLeft 2s forwards;
-    animation-delay: 12s;
+    background-color: rgb(115, 167, 102);
+    animation: slideBloco3 6s forwards;
+    animation-delay: 11s;
 }
 
 #bloco4{
-    background-color: rgb(44, 110, 5);
-    animation: slideDownRightUp 8s forwards;
+    background-color: rgb(66, 102, 57);
+    animation: slideBloco4 20s forwards;
     animation-delay: 5s;
 }
 
 #bloco5 {
-    background-color: rgb(74, 149, 192);
-    animation: slideDownRightUp 5s forwards; /* Tempo total de 6 segundos */
+    background-color: rgb(39, 68, 32);
+    animation: slideBloco5 18s forwards; /* Tempo total de 6 segundos */
     animation-delay: 5s;
 }
 
 #bloco6{
-    background-color: rgb(150, 39, 172);
-    animation: slideUpLeftDown2 5s forwards;
-    animation-delay: 10s;
+    background-color: rgb(145, 207, 129);
+    animation: slideBloco6 14s forwards;
+    animation-delay: 8s;
 }
 
 #bloco7{
-    background-color: rgb(201, 0, 43);
-    animation: slideRight 3s forwards;
-    animation-delay: 4s;
+    background-color: rgb(51, 82, 43);
+    animation: slideBloco7 28s forwards;
+    animation-delay: 2s;
 }
 
 #bloco8{
-    background-color: blue;
-    animation: slideUpLeftDown 10s forwards;
+    background-color: rgb(90, 135, 79);
+    animation: slideBloco8 10s forwards;
     
 }
-@keyframes slideRight{
-    to{transform: translateX(60px)}
+
+@keyframes slideBloco2{
+    0%{
+        transform: translateY(0px);/*Parado*/
+    }
+    11%{
+        transform: translateY(70px);/*Desce*/
+    }
+    19%{
+        transform: translateY(70px) translateX(180px);/*Direita*/
+    }
+    27%{
+        transform: translateY(0px) translateX(180px);/*Cima*/
+    }
+    77%{
+        transform: translateY(0px) translateX(180px);/*Parado*/
+    }
+    87%{
+        transform: translateY(0px) translateX(240px);
+    }
+    93%{
+        transform: translateY(0px) translateX(300px);
+    }
+    100%{
+        transform: translateY(0px) translateX(360px);
+    }
 }
 
-@keyframes slideUpLeftDown{
+@keyframes slideBloco3{
+    0%{
+        transform: translateX(0px);
+    }
+    52%{
+        transform: translateX(-60px);
+    }
+    75%{
+        transform: translateX(-60px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+    
+}
+
+@keyframes slideBloco4 {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    11% {
+        transform: translateY(70px); /* Desce para baixo */
+    }
+    24% {
+        transform: translateY(70px) translateX(120px); /*Direita */
+    }
+    32% {
+        transform: translateY(-0px) translateX(120px); /*Sobe*/
+    }
+    59%{
+        transform: translateY(-0px) translateX(120px); /*Parado*/
+    }
+    64%{
+        transform: translateY(-70px) translateX(120px);/*Sobe*/
+    }
+    77%{
+        transform: translateY(-70px) translateX(60px);/*Esquerda*/
+    }
+    100%{
+        transform: translateY(0px) translateX(60px);/*Desce*/
+    }
+}
+
+@keyframes slideBloco5 {
+    0%{
+        transform: translateY(0); /*Parado*/
+    }
+    10%{
+        transform: translateY(70px); /*Desce*/
+    }
+    21%{
+        transform: translateY(70px) translateX(120px); /*Direita*/
+    }
+    28%{
+        transform: translateY(-0px) translateX(120px); /*Sobe*/
+    }
+
+    62%{
+        transform: translateY(-0px) translateX(120px); /*Parado*/
+    }
+
+    68%{
+        transform: translateY(-70px) translateX(120px);/*Sobe*/
+    }
+
+    74%{
+        transform: translateY(-70px) translateX(60px);/*Esquerda*/
+    }
+
+    80%{
+        transform: translateY(0px) translateX(60px);/*Desce*/
+    }
+
+    86%{
+        transform: translateY(0px) translateX(60px);/*Parado*/
+    }
+
+    100%{
+        transform: translateY(0px) translateX(120px);/*Direita*/
+    }
+}
+
+@keyframes slideBloco6{
+    0%{
+        transform: translateY(0px);
+    }
+    16%{
+        transform: translateY(-70px);
+    }
+    32%{
+        transform: translateY(-70px) translateX(-180px);
+    }
+    48%{
+        transform: translateY(0px) translateX(-180px);
+    }
+    64%{
+        transform: translateY(-70px) translateX(-180px);
+    }
+    80%{
+        transform: translateY(-70px) translateX(-240px);
+    }
+    100%{
+        transform: translateY(0px) translateX(-240px);
+    }
+}
+
+@keyframes slideBloco7{
+    0%{
+        transform: translateX(0);
+    }
+    12%{
+        transform: translateX(60px); /*Direita*/
+    }
+    50%{
+        transform: translateX(60px); /*Parado*/
+    }
+    56%{
+        transform: translateY(-70px) translateX(60px); /*Cima*/
+    }
+    65%{
+        transform: translateY(-70px) translateX(0px); /*Esquerda*/
+    }
+    70%{
+        transform: translateY(0px) translateX(0px); /*Baixo*/
+    }
+    77%{
+        transform: translateY(-70px) translateX(0px); /*Cima*/
+    }
+    86%{
+        transform: translateY(-70px) translateX(-60px); /*Esquerda*/
+    }
+    100%{
+        transform: translateY(0px) translateX(-60px); /*Baixo*/
+    }
+}
+
+@keyframes slideBloco8{
     0% {
         transform: translateY(0); /* Posição inicial */
     }
@@ -83,67 +245,14 @@ h1{
     }
 }
 
-@keyframes slideUpLeftDown2{
-    0%{
-        transform: translateY(0px);
-    }
-    33%{
-        transform: translateY(-70px);
-    }
-    66%{
-        transform: translateY(-70px) translateX(-180px);
-    }
-    100%{
-        transform: translateY(0px) translateX(-180px);
-    }
-}
-@keyframes slideDownRightUp {
-    0% {
-        transform: translateY(0); /* Posição inicial */
-    }
-    33% {
-        transform: translateY(70px); /* Desce para baixo */
-    }
-    66% {
-        transform: translateY(70px) translateX(120px); /* Move para a direita */
-    }
-    100% {
-        transform: translateY(-0px) translateX(120px); /* Sobe para cima */
-    }
-}
 
-@keyframes slideDownRightUp2{
-    0%{
-        transform: translateY(0px);
-    }
-    33%{
-        transform: translateY(70px);
-    }
-    66%{
-        transform: translateY(70px) translateX(180px);
-    }
-    100%{
-        transform: translateY(-0px) translateX(180px);
-    }
-}
 
-@keyframes downLeftUp{
-    0%{
-        transform: translateY(0);
-    }
-    33%{
-        transform: translateY(70px);
-    }
-    66%{
-        transform: translateY(70px) translateX(-180px);
-    }
 
-    100%{
-        transform: translateY(-0px) translateX(-180px)
-    }
-}
 
-@keyframes slideLeft{
-    to{transform: translateX(-60px)}
-}
+
+
+
+
+
+
 
