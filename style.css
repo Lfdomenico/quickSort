@@ -76,7 +76,7 @@ h1{
     19%{
         transform: translateY(70px) translateX(180px);/*Direita*/
     }
-    27%{
+    32%{
         transform: translateY(0px) translateX(180px);/*Cima*/
     }
     77%{
@@ -120,7 +120,7 @@ h1{
     24% {
         transform: translateY(70px) translateX(120px); /*Direita */
     }
-    32% {
+    30% {
         transform: translateY(-0px) translateX(120px); /*Sobe*/
     }
     59%{
@@ -250,7 +250,6 @@ h1{
         transform: translateY(0px) translateX(-240px) /* Sobe para cima */
     }
 }
-
 
 
 
