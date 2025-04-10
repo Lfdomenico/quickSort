@@ -238,16 +238,16 @@ h1{
 
 @keyframes slideBloco8{
     0% {
-        transform: translateY(0); /* Posição inicial */
+        transform: translateY(0); /*Parado*/
     }
     33% {
-        transform: translateY(-70px); /* Desce para baixo */
+        transform: translateY(-70px); /*Desce*/
     }
     66% {
-        transform: translateY(-70px) translateX(-240px); /* Move para a direita */
+        transform: translateY(-70px) translateX(-240px); /*Direita*/
     }
     100% {
-        transform: translateY(0px) translateX(-240px) /* Sobe para cima */
+        transform: translateY(0px) translateX(-240px) /*Sobe*/
     }
 }
 
