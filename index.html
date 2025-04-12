@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Algoritmo de Ordenação - Quick Sort</h1>
+<h1>Algoritmo de Ordenação - Quick Sort</h1>
+<div id="blocoPrincipal">
+    
     <div id="bloco1" class="blocos">3</div>
     <div id="bloco2"class="blocos">14</div>
     <div id="bloco3"class="blocos">8</div>
@@ -17,7 +19,45 @@
     <div id="bloco6"class="blocos">5</div>
     <div id="bloco7"class="blocos">11</div>
     <div id="bloco8"class="blocos">9</div>
-    <br><br>
+</div>
+<ol id="orderedList"> 
+    <p style="font-size: 150%;">-Escolha do Pivô-</p>
 
+    <li>Array original: [3, 14, 8, 10, 12, 5, 11, 9].</li><br>
+    <li>O algoritmo "Quick Sort" é baseado em um técnica de divisão e conquista.</li><br>
+    <li>Ele opera a partir de um array principal, dividindo-o em subarrays, por meio da escolha de um pivô. Esse
+        pivô pode ser escolhido de algumas maneiras, como escolher o elemento[0] do array, o elemento[n-1] (último) de seu array, algum elemento intermediário, entre outras.</li><br>
+    <li>No caso, como pivô, o 9 foi escolhido.</li>
+        <p style="font-size: 150%;">-Particionamento do Array-</p>
+    <li>
+        Após a escolha do pivô, ele é comparado com os demais elementos constituintes do array, com o intuito de deixar aqueles à esquerda
+        do pivô os valores menores que o pivô, e à direita os valores maiores que o pivô.
+    </li><br>
+    <li>
+        Para isso, o index do pivô é fixado.
+    </li><br>
+    <li>
+        O elemento do pivô é comparado com os demais elementos do início do array.
+    </li><br>
+    <li>
+        Caso o elemento seja maior que o do pivô, seu index é reservado.
+    </li><br>
+    <li>
+        O pivô permanece sendo comparado com os demais elementos. Caso um elemento menor que o pivô seja encontrado, ele terá
+        seu posicionamento substituído pelo elemento maior que o pivô encotrado anteriormente.
+    </li><br>
+    <li>
+        Esse processo é repetido até encontrar um elemento maior que o pivô, outro menor e alterar suas posições. Quando não encontrar, então o pivô é substituído pelo
+        elemento fixado na interação ao percorrer o array.
+    </li>
+    <p style="font-size: 150%;">-Organização do SubArray</p>
+    <li>
+        Recursivamente, o mesmo processo é feito tanto para o array menor que o pivô ([3, 8, 5]) quanto para a parte maior que o pivô ([12, 14, 11, 10]).
+    </li><br>
+    <li>
+        Em cada um desses subarrays, é definido um pivô, o array é percorrido com o intuito de deixar os elementos menores que o pivô do
+        subarray à sua esquerda e os maiores à sua direita.
+    </li>
+</ol>
 </body>
 </html>
